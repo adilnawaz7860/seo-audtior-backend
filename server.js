@@ -170,7 +170,7 @@
 require('dotenv').config(); // Load environment variables first
 const express = require('express');
 const cors = require('cors');
-const lighthouse = require('lighthouse');
+const lighthouse = require('lighthouse').default;
 const chromium = require('@sparticuz/chromium'); // ✅ works on serverless
 const puppeteer = require('puppeteer-core');
 const generateSuggestions = require('./generateSuggestions');
